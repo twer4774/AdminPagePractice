@@ -28,6 +28,10 @@ public class Category {
 
     private String createdBy;
 
+    private LocalDateTime updatedAt;
+
+    private String updatedBy;
+
     //관계설정 Category 1 : N Partner
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "category")
     private List<Partner> partnerList;

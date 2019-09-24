@@ -33,6 +33,10 @@ public class OrderDetail {
 
     private String createdBy;
 
+    private LocalDateTime updatedAt;
+
+    private String updatedBy;
+
     //관계설정 item 1 : N orderDetail
     @ManyToOne
     private Item item;

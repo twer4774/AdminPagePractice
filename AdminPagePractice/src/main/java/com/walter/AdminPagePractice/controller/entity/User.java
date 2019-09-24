@@ -1,9 +1,6 @@
 package com.walter.AdminPagePractice.controller.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
@@ -17,6 +14,7 @@ import java.util.List;
 @Accessors(chain = true)
 @Entity
 //@EntityListeners(AuditingEntityListener.class)
+@ToString(exclude = {"orderGroupList"})
 public class User {
 
     @Id
@@ -29,7 +27,7 @@ public class User {
 
     private String email;
 
-    private String phonNumber;
+    private String phoneNumber;
 
     private String status; //Registered, Unregistered
 

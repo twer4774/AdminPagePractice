@@ -36,6 +36,10 @@ public class Item {
 
     private String createdBy;
 
+    private LocalDateTime updatedAt;
+
+    private String updatedBy;
+
     //관계설정 Item 1 : N OrderDetail
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "item")
     private List<OrderDetail> orderDetailList;
