@@ -17,7 +17,6 @@ public class OrderDetailApiLogicServcie extends BaseService<OrderDetailApiReques
 
     @Autowired
     private ItemRepository itemRepository;
-
     @Autowired
     private OrderGroupRepository orderGroupRepository;
 
@@ -42,8 +41,8 @@ public class OrderDetailApiLogicServcie extends BaseService<OrderDetailApiReques
     @Override
     public Header<OrderDetailApiResponse> read(Long id) {
         return baseRepository.findById(id)
-                .map(orderDeatail -> response(orderDeatail))
-                .orElseGet( () -> Header.ERROR("데이터 없"));
+                .map(orderDetail -> response(orderDetail))
+                .orElseGet(() -> Header.ERROR("데이터 없음"));
     }
 
     @Override
@@ -56,9 +55,7 @@ public class OrderDetailApiLogicServcie extends BaseService<OrderDetailApiReques
             newOrderDetail.setStatus(orderDetailApiRequest.getStatus())
                     .setQuantity(orderDetailApiRequest.getQuantity())
                     .setArrivalDate(orderDetailApiRequest.getArrivalDate())
-                    .setTotalPrice(orderDetailApiRequest.getTotalPrice())
-                    .setOrderGroup(orderGroupRepository.getOne(orderDetailApiRequest.getOrderGroupId()))
-                    .setItem(itemRepository.getOne(orderDetailApiRequest.getItemId()));
+                    .setTotalPrice(orderDetailApiRequest.getTotalPrice());
 
             return newOrderDetail;
         }).map(newOrderDetail -> baseRepository.save(newOrderDetail))

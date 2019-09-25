@@ -29,6 +29,7 @@ public class OrderGroupApiLogicServcie extends BaseService<OrderGroupApiRequest,
                 .orderAt(orderGroupApiRequest.getOrderAt())
                 .status(orderGroupApiRequest.getStatus())
                 .totalPrice(orderGroupApiRequest.getTotalPrice())
+                .user(userRepository.getOne(orderGroupApiRequest.getUserId()))
                 .build();
 
         OrderGroup newOrderGroup = baseRepository.save(orderGroup);

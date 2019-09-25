@@ -53,7 +53,7 @@ public class AdminUserApiLogicServcie extends BaseService<AdminUserApiRequest, A
                 .map(adminUser -> {
                     //3. setter를 이용해 객체를 초기화 시킨다.
                     adminUser.setRole(adminUserApiRequest.getRole())
-                            .setAccount(adminUserApiRequest.getRole())
+                            .setAccount(adminUserApiRequest.getAccount())
                             .setPassword(adminUserApiRequest.getPassword())
                             .setLastLoginAt(adminUserApiRequest.getLastLoginAt())
                             .setLoginFailCount(adminUserApiRequest.getLoginFailCount())

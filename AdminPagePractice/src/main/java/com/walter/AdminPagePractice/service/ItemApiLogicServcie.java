@@ -16,7 +16,6 @@ public class ItemApiLogicServcie extends BaseService<ItemApiRequest, ItemApiResp
     //외래키이므로 autowired에 등록한다.
     @Autowired
     private PartnerRepository partnerRepository;
-
     @Override
     public Header<ItemApiResponse> create(Header<ItemApiRequest> request) {
         ItemApiRequest itemApiRequest = request.getData();
