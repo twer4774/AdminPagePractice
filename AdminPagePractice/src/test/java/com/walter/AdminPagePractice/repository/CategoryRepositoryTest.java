@@ -1,8 +1,8 @@
 package com.walter.AdminPagePractice.repository;
 
 import com.walter.AdminPagePractice.AdminPagePracticeApplicationTests;
-import com.walter.AdminPagePractice.controller.entity.Category;
-import com.walter.AdminPagePractice.controller.repository.CategoryRepository;
+import com.walter.AdminPagePractice.controller.model.entity.Category;
+import com.walter.AdminPagePractice.controller.model.repository.CategoryRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

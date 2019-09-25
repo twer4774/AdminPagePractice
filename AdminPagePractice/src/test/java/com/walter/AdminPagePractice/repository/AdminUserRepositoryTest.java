@@ -1,8 +1,8 @@
 package com.walter.AdminPagePractice.repository;
 
 import com.walter.AdminPagePractice.AdminPagePracticeApplicationTests;
-import com.walter.AdminPagePractice.controller.entity.AdminUser;
-import com.walter.AdminPagePractice.controller.repository.AdminUserRepository;
+import com.walter.AdminPagePractice.controller.model.entity.AdminUser;
+import com.walter.AdminPagePractice.controller.model.repository.AdminUserRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

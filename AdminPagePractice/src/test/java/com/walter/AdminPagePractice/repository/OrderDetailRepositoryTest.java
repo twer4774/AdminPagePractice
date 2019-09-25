@@ -1,10 +1,10 @@
 package com.walter.AdminPagePractice.repository;
 
 import com.walter.AdminPagePractice.AdminPagePracticeApplicationTests;
-import com.walter.AdminPagePractice.controller.entity.Item;
-import com.walter.AdminPagePractice.controller.entity.OrderDetail;
-import com.walter.AdminPagePractice.controller.entity.OrderGroup;
-import com.walter.AdminPagePractice.controller.repository.OrderDetailRepository;
+import com.walter.AdminPagePractice.controller.model.entity.Item;
+import com.walter.AdminPagePractice.controller.model.entity.OrderDetail;
+import com.walter.AdminPagePractice.controller.model.entity.OrderGroup;
+import com.walter.AdminPagePractice.controller.model.repository.OrderDetailRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

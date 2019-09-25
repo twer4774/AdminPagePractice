@@ -1,9 +1,9 @@
 package com.walter.AdminPagePractice.repository;
 
 import com.walter.AdminPagePractice.AdminPagePracticeApplicationTests;
-import com.walter.AdminPagePractice.controller.entity.Category;
-import com.walter.AdminPagePractice.controller.entity.Partner;
-import com.walter.AdminPagePractice.controller.repository.PartnerRepository;
+import com.walter.AdminPagePractice.controller.model.entity.Category;
+import com.walter.AdminPagePractice.controller.model.entity.Partner;
+import com.walter.AdminPagePractice.controller.model.repository.PartnerRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
